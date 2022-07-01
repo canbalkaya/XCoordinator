@@ -24,6 +24,7 @@
 		3ABAE217286EF6FD00EB933C /* PopupKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3ABAE216286EF6FD00EB933C /* PopupKit */; };
 		3ABAE219286EF70E00EB933C /* CompactNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABAE218286EF70E00EB933C /* CompactNavigationCoordinator.swift */; };
 		3ABAE21B286EF8AA00EB933C /* CompactNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABAE21A286EF8AA00EB933C /* CompactNavigationTransition.swift */; };
+		3ABAE222286F029600EB933C /* Transition+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABAE221286F029600EB933C /* Transition+Ext.swift */; };
 		OBJ_251 /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* AddRef.swift */; };
 		OBJ_252 /* Amb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Amb.swift */; };
 		OBJ_253 /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* AnonymousDisposable.swift */; };
@@ -299,6 +300,7 @@
 /* Begin PBXFileReference section */
 		3ABAE218286EF70E00EB933C /* CompactNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactNavigationCoordinator.swift; sourceTree = "<group>"; };
 		3ABAE21A286EF8AA00EB933C /* CompactNavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactNavigationTransition.swift; sourceTree = "<group>"; };
+		3ABAE221286F029600EB933C /* Transition+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transition+Ext.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* AnyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCoordinator.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Concat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concat.swift; sourceTree = "<group>"; };
 		OBJ_101 /* ConcurrentDispatchQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentDispatchQueueScheduler.swift; sourceTree = "<group>"; };
@@ -572,6 +574,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ABAE220286F028400EB933C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ABAE221286F029600EB933C /* Transition+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		OBJ_231 /* RxTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +893,7 @@
 		OBJ_8 /* XCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				3ABAE220286F028400EB933C /* Extensions */,
 				OBJ_9 /* Animation.swift */,
 				OBJ_10 /* AnyCoordinator.swift */,
 				OBJ_11 /* AnyTransitionPerformer.swift */,
@@ -1199,6 +1210,7 @@
 				OBJ_350 /* PublishSubject.swift in Sources */,
 				OBJ_351 /* Queue.swift in Sources */,
 				OBJ_352 /* Range.swift in Sources */,
+				3ABAE222286F029600EB933C /* Transition+Ext.swift in Sources */,
 				OBJ_353 /* Reactive.swift in Sources */,
 				OBJ_354 /* RecursiveLock.swift in Sources */,
 				OBJ_355 /* RecursiveScheduler.swift in Sources */,
