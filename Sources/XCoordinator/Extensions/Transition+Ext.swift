@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import XCoordinator
 
 public extension Transition {
 
