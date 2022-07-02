@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SharedComponents
 
 /// NavigationTransition offers transitions that can be used
 /// with a `UINavigationController` as rootViewController.
-public typealias NavigationTransition = Transition<UINavigationController>
+public typealias NavigationTransition = Transition<NavigationController>
 
-extension Transition where RootViewController: UINavigationController {
+extension Transition where RootViewController: NavigationController {
 
     ///
     /// Pushes a presentable on the rootViewController's navigation stack.
