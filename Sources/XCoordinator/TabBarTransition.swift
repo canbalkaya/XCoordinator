@@ -87,4 +87,16 @@ extension Transition where RootViewController: UITabBarController {
         }
     }
 
+    public static func present(_ presentable: Presentable,
+                               animation: Animation? = nil) -> Transition {
+        Transition(presentables: [presentable],
+                   animationInUse: animation?.presentationAnimation
+        ) { rootViewController, options, completion in
+            rootViewController.present(onRoot: true,
+                                       presentable.viewController,
+                                       with: options,
+                                       animation: animation,
+                                       completion: completion)
+        }
+    }
 }
