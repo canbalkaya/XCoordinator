@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import PopupKit
+import SharedComponents
 
 /// NavigationTransition offers transitions that can be used
-/// with a `PopupNavigationController` as rootViewController.
-public typealias CompactNavigationTransition = Transition<PopupNavigationController>
+/// with a `CompactNavigationController` as rootViewController.
+public typealias CompactNavigationTransition = Transition<CompactNavigationController>
 
-extension Transition where RootViewController: PopupNavigationController {
+extension Transition where RootViewController: CompactNavigationController {
 
     ///
     /// Pushes a presentable on the rootViewController's navigation stack.

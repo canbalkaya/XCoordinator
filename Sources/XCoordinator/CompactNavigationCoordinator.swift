@@ -6,10 +6,10 @@
 //
 
 import UIKit
-import PopupKit
+import SharedComponents
 
 ///
-/// CompactNavigationCoordinator acts as a base class for custom coordinators with a `PopupNavigationController`
+/// CompactNavigationCoordinator acts as a base class for custom coordinators with a `CompactNavigationController`
 /// as rootViewController.
 ///
 /// CompactNavigationCoordinator especially ensures that transition animations are called,

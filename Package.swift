@@ -22,7 +22,6 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
-        .package(url: "https://github.com/VibesHQ/PopupKit", branch: "main"),
         .package(url: "https://github.com/VibesHQ/ComponentKit", branch: "main")
     ],
     targets: [
@@ -31,7 +30,6 @@ let package = Package(
         .target(
             name: "XCoordinator",
             dependencies: [
-                "PopupKit",
                 "ComponentKit"
             ]),
         .target(
