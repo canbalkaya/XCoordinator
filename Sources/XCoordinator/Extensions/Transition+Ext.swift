@@ -29,4 +29,70 @@ public extension Transition {
             }
         }
     }
+    
+    static func dismissTwoTimes() -> Transition {
+        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
+            rootViewController
+                .presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true) {
+                Transition
+                        .dismissAll()
+                    .perform(on: rootViewController,
+                             with: options,
+                             completion: completion)
+            }
+        }
+    }
+    
+    static func dismissThreeTimes() -> Transition {
+        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
+            rootViewController
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true) {
+                Transition
+                        .dismissAll()
+                    .perform(on: rootViewController,
+                             with: options,
+                             completion: completion)
+            }
+        }
+    }
+    
+    static func dismissFourTimes() -> Transition {
+        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
+            rootViewController
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true) {
+                Transition
+                        .dismissAll()
+                    .perform(on: rootViewController,
+                             with: options,
+                             completion: completion)
+            }
+        }
+    }
+    
+    static func dismissFiveTimes() -> Transition {
+        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
+            rootViewController
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true) {
+                Transition
+                        .dismissAll()
+                    .perform(on: rootViewController,
+                             with: options,
+                             completion: completion)
+            }
+        }
+    }
 }
