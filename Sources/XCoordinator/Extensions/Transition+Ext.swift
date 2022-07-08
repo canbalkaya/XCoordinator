@@ -16,7 +16,7 @@ public extension Transition {
 
     static func dismissAll() -> Transition {
         return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
-            guard let presentedViewController = rootViewController.presentedViewController else {
+            guard let presentedViewController = rootViewController.presentingViewController else {
                 completion?()
                 return
             }
