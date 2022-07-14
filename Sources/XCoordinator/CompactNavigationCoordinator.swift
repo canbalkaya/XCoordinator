@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SharedComponents
+import Components
 
 ///
 /// CompactNavigationCoordinator acts as a base class for custom coordinators with a `CompactNavigationController`

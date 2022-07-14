@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SharedComponents
+import Components
 
 /// NavigationTransition offers transitions that can be used
 /// with a `CompactNavigationController` as rootViewController.

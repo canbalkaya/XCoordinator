@@ -1,21 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "354dda32d89fc8cd4f5c46487f64957d355f53d8",
+        "version" : "5.6.1"
+      }
+    },
+    {
       "identity" : "componentkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/VibesHQ/ComponentKit",
       "state" : {
         "branch" : "main",
-        "revision" : "b619bb55d26b710f19eae306bc30d7f3b23e693a"
-      }
-    },
-    {
-      "identity" : "flagkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/madebybowtie/FlagKit",
-      "state" : {
-        "revision" : "f12111d91902d23fd1d9cc7ad9198030b049795d",
-        "version" : "2.4.0"
+        "revision" : "d2ff7a9926a157ad1270eb66febb10d218af2ec1"
       }
     },
     {
@@ -28,12 +28,30 @@
       }
     },
     {
+      "identity" : "iglistkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/canbalkaya/IGListKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "95a92c5beddb75342e76c8906a480f7f6bfafe79"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
-        "version" : "7.2.4"
+        "revision" : "2235a22ca249199cb736237f4bb9cc12b6ed416a",
+        "version" : "7.3.0"
+      }
+    },
+    {
+      "identity" : "model",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VibesHQ/Model",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c4413f2b9bb7dbd2ade40262ecef1bad7070901b"
       }
     },
     {
@@ -70,15 +88,6 @@
       "state" : {
         "branch" : "main",
         "revision" : "00394e0b9f1626680b817f3d24daba68adbe378d"
-      }
-    },
-    {
-      "identity" : "swiftextensions",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/VibesHQ/SwiftExtensions",
-      "state" : {
-        "branch" : "main",
-        "revision" : "cb52149c9d3753faa8a58c775ee3ab76c9877b3b"
       }
     }
   ],
