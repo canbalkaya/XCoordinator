@@ -14,6 +14,21 @@ public extension Transition {
         return .present(presentable, animation: animation)
     }
 
+    static func popTwoTimes() -> Transition {
+        return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
+            rootViewController
+                .presentingViewController?
+                .presentingViewController?
+                .navigationController?.popViewController(animated: true) {
+                Transition
+                        .dismissAll()
+                    .perform(on: rootViewController,
+                             with: options,
+                             completion: completion)
+            }
+        }
+    }
+    
     static func dismissAll() -> Transition {
         return Transition(presentables: [], animationInUse: nil) { rootViewController, options, completion in
             guard let presentedViewController = rootViewController.presentingViewController else {
