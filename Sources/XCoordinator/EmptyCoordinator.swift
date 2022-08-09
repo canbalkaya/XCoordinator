@@ -1,14 +1,13 @@
 //
-//  File.swift
+//  EmptyCoordinator.swift
 //  
 //
 //  Created by Can Balkaya on 8/9/22.
 //
 
 import UIKit
-import XCoordinator
 
-open enum EmptyRoute: Route {
+public enum EmptyRoute: Route {
     case empty
 }
 
