@@ -37,7 +37,7 @@ public extension Transition {
                 .presentingViewController?
                 .dismiss(animated: true) {
                 Transition
-                        .dismissAll()
+                    .dismissAll()
                     .perform(on: rootViewController,
                              with: options,
                              completion: completion)
@@ -53,7 +53,7 @@ public extension Transition {
                 .presentingViewController?
                 .dismiss(animated: true) {
                 Transition
-                        .dismissAll()
+                    .dismissAll()
                     .perform(on: rootViewController,
                              with: options,
                              completion: completion)
@@ -70,7 +70,7 @@ public extension Transition {
                 .presentingViewController?
                 .dismiss(animated: true) {
                 Transition
-                        .dismissAll()
+                    .dismissAll()
                     .perform(on: rootViewController,
                              with: options,
                              completion: completion)
@@ -88,7 +88,7 @@ public extension Transition {
                 .presentingViewController?
                 .dismiss(animated: true) {
                 Transition
-                        .dismissAll()
+                    .dismissAll()
                     .perform(on: rootViewController,
                              with: options,
                              completion: completion)

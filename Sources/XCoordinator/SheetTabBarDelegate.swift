@@ -18,10 +18,10 @@ open class SheetTabBarDelegate: NSObject, UITabBarControllerDelegate {
     }
 
     // MARK: - Methods
-    open func tabBarController(
-        _ tabBarController: UITabBarController,
-        shouldSelect viewController: UIViewController
-    ) -> Bool {
+    open func tabBarController(_ tabBarController: UITabBarController,
+                               shouldSelect viewController: UIViewController) -> Bool {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        
         if viewController.children.first is EmptyViewController {
             didSelectSheet(viewController)
             return false
