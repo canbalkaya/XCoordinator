@@ -127,7 +127,7 @@ extension Router {
     /// - Parameters:
     ///     - route: The route to be triggered.
     ///
-    public func trigger(_ route: RouteType) async {
+    @MainActor public func trigger(_ route: RouteType) async {
         await trigger(route, with: .default)
     }
 
